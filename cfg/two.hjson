@@ -1,0 +1,24 @@
+{
+   "num_subclusters": 2, 
+   "subcluster_settings": {
+        // Devices
+        "num_devices" : 16,
+        // Capacity in GB
+        "device_cap" : 256, 
+
+        // Hosts
+        "num_hosts" : 2,
+        // Capacity in GB
+        "host_cap" : 64,
+
+        // Leaf Switch 
+        "num_switches" : 1,
+        "num_switch_ports" : 32
+    },
+    "thresholds": {
+       // ErrorsPerDay Threshold for Devices
+       "device": 20, 
+       // ErrorsPerDay Threshold for CXL Links
+       "link": 20 
+    } 
+}

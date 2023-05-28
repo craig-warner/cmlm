@@ -1,0 +1,165 @@
+// Sample Health File for 2 subcluster
+{
+    // Subclusers
+    "scs": [
+        {
+            "devices": [
+                    //
+                    { "RdyForReplacement": false, "ErrorsPerDay": 10 },
+                    { "RdyForReplacement": false, "ErrorsPerDay": 10 },
+                    { "RdyForReplacement": false, "ErrorsPerDay": 10 },
+                    { "RdyForReplacement": false, "ErrorsPerDay": 10 },
+                    //
+                    { "RdyForReplacement": false, "ErrorsPerDay": 10 },
+                    { "RdyForReplacement": false, "ErrorsPerDay": 10 },
+                    { "RdyForReplacement": false, "ErrorsPerDay": 10 },
+                    { "RdyForReplacement": false, "ErrorsPerDay": 10 },
+                    //
+                    { "RdyForReplacement": false, "ErrorsPerDay": 10 },
+                    { "RdyForReplacement": false, "ErrorsPerDay": 10 },
+                    { "RdyForReplacement": false, "ErrorsPerDay": 10 },
+                    { "RdyForReplacement": false, "ErrorsPerDay": 10 },
+                    //
+                    { "RdyForReplacement": false, "ErrorsPerDay": 10 },
+                    { "RdyForReplacement": false, "ErrorsPerDay": 10 },
+                    { "RdyForReplacement": false, "ErrorsPerDay": 10 },
+                    { "RdyForReplacement": false, "ErrorsPerDay": 10 }
+            ],
+            "lsw": [
+                {
+                    "ports": [
+                        //
+                        { "Broken":false, "ErrorsPerDay": 10 },
+                        { "Broken":false, "ErrorsPerDay": 10 },
+                        { "Broken":false, "ErrorsPerDay": 10 }, 
+                        { "Broken":false, "ErrorsPerDay": 10 },
+                        //
+                        { "Broken":false, "ErrorsPerDay": 10 },
+                        { "Broken":false, "ErrorsPerDay": 10 },
+                        { "Broken":false, "ErrorsPerDay": 10 }, 
+                        { "Broken":false, "ErrorsPerDay": 10 },
+                        //
+                        { "Broken":false, "ErrorsPerDay": 10 },
+                        { "Broken":false, "ErrorsPerDay": 10 },
+                        { "Broken":false, "ErrorsPerDay": 10 }, 
+                        { "Broken":false, "ErrorsPerDay": 10 },
+                        //
+                        { "Broken":false, "ErrorsPerDay": 10 },
+                        { "Broken":false, "ErrorsPerDay": 10 },
+                        { "Broken":false, "ErrorsPerDay": 10 }, 
+                        { "Broken":false, "ErrorsPerDay": 10 },
+                        //
+                        { "Broken":false, "ErrorsPerDay": 10 },
+                        { "Broken":false, "ErrorsPerDay": 10 },
+                        { "Broken":false, "ErrorsPerDay": 10 }, 
+                        { "Broken":false, "ErrorsPerDay": 10 },
+                        //
+                        { "Broken":false, "ErrorsPerDay": 10 },
+                        { "Broken":false, "ErrorsPerDay": 10 },
+                        { "Broken":false, "ErrorsPerDay": 10 }, 
+                        { "Broken":false, "ErrorsPerDay": 10 },
+                        //
+                        { "Broken":false, "ErrorsPerDay": 10 },
+                        { "Broken":false, "ErrorsPerDay": 10 },
+                        { "Broken":false, "ErrorsPerDay": 10 }, 
+                        { "Broken":false, "ErrorsPerDay": 10 },
+                        //
+                        { "Broken":false, "ErrorsPerDay": 10 },
+                        { "Broken":false, "ErrorsPerDay": 10 },
+                        { "Broken":false, "ErrorsPerDay": 10 }, 
+                        { "Broken":false, "ErrorsPerDay": 10 }
+                    ] 
+                }
+            ] ,
+            "hosts": [
+                //
+                { "NonResponsive":false },
+                { "NonResponsive":false },
+                { "NonResponsive":false },
+                { "NonResponsive":false },
+            ]
+        },
+        {
+            "devices": [
+                    //
+                    { "RdyForReplacement": false, "ErrorsPerDay": 10 },
+                    { "RdyForReplacement": false, "ErrorsPerDay": 10 },
+                    { "RdyForReplacement": false, "ErrorsPerDay": 10 },
+                    { "RdyForReplacement": false, "ErrorsPerDay": 10 },
+                    //
+                    { "RdyForReplacement": false, "ErrorsPerDay": 10 },
+                    { "RdyForReplacement": false, "ErrorsPerDay": 10 },
+                    { "RdyForReplacement": false, "ErrorsPerDay": 10 },
+                    { "RdyForReplacement": false, "ErrorsPerDay": 10 },
+                    //
+                    { "RdyForReplacement": false, "ErrorsPerDay": 10 },
+                    { "RdyForReplacement": false, "ErrorsPerDay": 10 },
+                    { "RdyForReplacement": false, "ErrorsPerDay": 10 },
+                    { "RdyForReplacement": false, "ErrorsPerDay": 10 },
+                    //
+                    { "RdyForReplacement": false, "ErrorsPerDay": 10 },
+                    { "RdyForReplacement": false, "ErrorsPerDay": 10 },
+                    { "RdyForReplacement": false, "ErrorsPerDay": 10 },
+                    { "RdyForReplacement": false, "ErrorsPerDay": 10 },
+                    //
+                    { "RdyForReplacement": false, "ErrorsPerDay": 10 },
+                    { "RdyForReplacement": false, "ErrorsPerDay": 10 },
+                    { "RdyForReplacement": false, "ErrorsPerDay": 10 },
+                    { "RdyForReplacement": false, "ErrorsPerDay": 10 },
+            ],
+            "lsw": [
+                {
+                    "ports": [
+                        //
+                        { "Broken":false, "ErrorsPerDay": 10 },
+                        { "Broken":false, "ErrorsPerDay": 10 },
+                        { "Broken":false, "ErrorsPerDay": 10 }, 
+                        { "Broken":false, "ErrorsPerDay": 10 },
+                        //
+                        { "Broken":false, "ErrorsPerDay": 10 },
+                        { "Broken":false, "ErrorsPerDay": 10 },
+                        { "Broken":false, "ErrorsPerDay": 10 }, 
+                        { "Broken":false, "ErrorsPerDay": 10 },
+                        //
+                        { "Broken":false, "ErrorsPerDay": 10 },
+                        { "Broken":false, "ErrorsPerDay": 10 },
+                        { "Broken":false, "ErrorsPerDay": 10 }, 
+                        { "Broken":false, "ErrorsPerDay": 10 },
+                        //
+                        { "Broken":false, "ErrorsPerDay": 10 },
+                        { "Broken":false, "ErrorsPerDay": 10 },
+                        { "Broken":false, "ErrorsPerDay": 10 }, 
+                        { "Broken":false, "ErrorsPerDay": 10 },
+                        //
+                        { "Broken":false, "ErrorsPerDay": 10 },
+                        { "Broken":false, "ErrorsPerDay": 10 },
+                        { "Broken":false, "ErrorsPerDay": 10 }, 
+                        { "Broken":false, "ErrorsPerDay": 10 },
+                        //
+                        { "Broken":false, "ErrorsPerDay": 10 },
+                        { "Broken":false, "ErrorsPerDay": 10 },
+                        { "Broken":false, "ErrorsPerDay": 10 }, 
+                        { "Broken":false, "ErrorsPerDay": 10 },
+                        //
+                        { "Broken":false, "ErrorsPerDay": 10 },
+                        { "Broken":false, "ErrorsPerDay": 10 },
+                        { "Broken":false, "ErrorsPerDay": 10 }, 
+                        { "Broken":false, "ErrorsPerDay": 10 },
+                        //
+                        { "Broken":false, "ErrorsPerDay": 10 },
+                        { "Broken":false, "ErrorsPerDay": 10 },
+                        { "Broken":false, "ErrorsPerDay": 10 }, 
+                        { "Broken":false, "ErrorsPerDay": 10 }
+                    ] 
+                }
+            ] ,
+            "hosts": [
+                //
+                { "NonResponsive":false },
+                { "NonResponsive":false },
+                { "NonResponsive":false },
+                { "NonResponsive":false },
+            ]
+        }
+    ]
+}
