@@ -19,7 +19,7 @@ from PyQt5.QtWidgets import (
     QMainWindow, QApplication,
     QLabel, QCheckBox, QComboBox, QListWidget, QLineEdit,
     QLineEdit, QSpinBox, QDoubleSpinBox, QSlider,
-    QHBoxLayout, QVBoxLayout
+    QHBoxLayout, QVBoxLayout, QToolBar, QAction, QStatusBar
 )
 from PyQt5.QtCore import ( 
     Qt
@@ -39,8 +39,54 @@ class MainWindow(QMainWindow):
         self.setCentralWidget(self.wid)
         self.setGeometry(0,100,512,384)
         self.setWindowTitle("CXL Memory Lake Monitor")
+        self.createActions()
+        self.addMenuToWindow()
         self.addBody()
         self.show()
+
+    def createActions(self):
+        self.loadHealthLogAction = QAction()
+        self.loadHealthLogAction.setText("Load Health Log")
+        self.loadPerfLogAction= QAction()
+        self.loadPerfLogAction.setText("Load Performance Log")
+        self.exitAppAction= QAction()
+        self.exitAppAction.setText("Quit")
+
+    def addMenuToWindow(self):
+
+        toolbar = QToolBar("Toolbar")
+        self.addToolBar(toolbar)
+
+        button_action = QAction("CheckHealth", self)
+        #button_action2 = QAction(QIcon("bug.png"), "Your &button2", self)
+        button_action.setStatusTip("Use this to update health status of the cluster")
+        button_action.triggered.connect(self.onMyToolBarButtonClick)
+
+        toolbar.addAction(button_action)
+        self.setStatusBar(QStatusBar(self))
+
+        menu = self.menuBar()
+        file_menu = menu.addMenu("&File")
+        file_menu.addAction(self.loadHealthLogAction)
+        file_menu.addAction(self.loadPerfLogAction)
+        file_menu.addSeparator()
+        file_menu.addAction(self.exitAppAction)
+
+        self.loadHealthLogAction.triggered.connect(self.doLoadHealthLog)
+        self.loadPerfLogAction.triggered.connect(self.doLoadPerfLog)
+        self.exitAppAction.triggered.connect(self.doExitApp)
+
+    def onMyToolBarButtonClick(self, s):
+        print("click", s)
+
+    def doLoadHealthLog(self):
+        print("Load Health Log")
+
+    def doLoadPerfLog(self):
+        print("Load Perf Log")
+
+    def doExitApp(self):
+        exit(0)
 
     def addBody(self):
         hbox1 = QtWidgets.QHBoxLayout()
