@@ -52,32 +52,41 @@ class MainWindow(QMainWindow):
         self.exitAppAction= QAction()
         self.exitAppAction.setText("Quit")
 
+        self.aboutAction= QAction()
+        self.aboutAction.setText("About")
+
+        self.updateHealthAction = QAction()
+        # QAction(QIcon("bug.png"), "Your &button2", self)
+        self.updateHealthAction.setText("Update Health Information")
+        self.updateHealthAction.setStatusTip("Use this to update health status of the cluster")
+
     def addMenuToWindow(self):
 
         toolbar = QToolBar("Toolbar")
         self.addToolBar(toolbar)
 
-        button_action = QAction("CheckHealth", self)
-        #button_action2 = QAction(QIcon("bug.png"), "Your &button2", self)
-        button_action.setStatusTip("Use this to update health status of the cluster")
-        button_action.triggered.connect(self.onMyToolBarButtonClick)
-
-        toolbar.addAction(button_action)
+        toolbar.addAction(self.updateHealthAction)
         self.setStatusBar(QStatusBar(self))
 
         menu = self.menuBar()
         file_menu = menu.addMenu("&File")
         file_menu.addAction(self.loadHealthLogAction)
         file_menu.addAction(self.loadPerfLogAction)
+        file_menu.addAction(self.updateHealthAction)
         file_menu.addSeparator()
         file_menu.addAction(self.exitAppAction)
+
+        help_menu = menu.addMenu("&Help")
+        help_menu.addAction(self.aboutAction)
 
         self.loadHealthLogAction.triggered.connect(self.doLoadHealthLog)
         self.loadPerfLogAction.triggered.connect(self.doLoadPerfLog)
         self.exitAppAction.triggered.connect(self.doExitApp)
+        self.aboutAction.triggered.connect(self.doAbout)
+        self.updateHealthAction.triggered.connect(self.doUpdateHealth)
 
-    def onMyToolBarButtonClick(self, s):
-        print("click", s)
+    def doUpdateHealth(self, s):
+        print("Update Health")
 
     def doLoadHealthLog(self):
         print("Load Health Log")
@@ -87,6 +96,9 @@ class MainWindow(QMainWindow):
 
     def doExitApp(self):
         exit(0)
+
+    def doAbout(self):
+        print("About")
 
     def addBody(self):
         hbox1 = QtWidgets.QHBoxLayout()
